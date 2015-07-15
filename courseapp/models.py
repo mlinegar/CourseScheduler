@@ -16,3 +16,7 @@ class Courses(models.Model):
     subject = models.CharField(max_length = 30)
     status = models.CharField(max_length = 9)
     units = models.DecimalField(max_digits = 3, decimal_places = 1)
+    days = models.CharField(max_length=5)
+    time = models.CharField(max_length=11)
+    location = models.CharField(max_length=15)
+    addme = models.CharField(max_length=100)
