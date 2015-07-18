@@ -2,8 +2,8 @@ from django.db import models
 
 # Create your models here.
 class Courses(models.Model):
-    CRN = models.CharField(max_length = 5, primary_key= True)
     term = models.CharField(max_length = 10, default='')
+    CRN = models.CharField(max_length = 5, primary_key= True)
     year = models.CharField(max_length=4, default='')
     note = models.CharField(max_length = 250, default='')
     course = models.CharField(max_length = 12, default='')

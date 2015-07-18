@@ -40,6 +40,10 @@ INSTALLED_APPS = (
     'courseapp',
 )
 
+FIXTURE_DIRS = (
+    os.path.join(BASE_DIR, 'fixtures')
+)
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
