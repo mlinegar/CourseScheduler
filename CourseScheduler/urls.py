@@ -19,3 +19,5 @@ from django.contrib import admin
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
 ]
+
+url(r'^my/datatable/data/$', login_required(OrderListJson.as_view()), name='order_list_json'),
